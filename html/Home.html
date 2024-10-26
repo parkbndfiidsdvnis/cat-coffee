@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C&C</title>
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header>
+
+        <nav class="main-nav">
+            <div class="logo">
+                <img src="../image/icons8-cat-footprint-48.png" alt="Coffee House Logo">
+            </div>
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="#">Dịch vụ</a></li>
+                <li><a href="#">Tin tức</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+            <div class="search-cart">
+                <input type="text" placeholder="Search...">
+                <a href="#"><img src="../image/icons8-cat-footprint-48.png" alt="Cart Icon"></a>
+            </div>
+            <!-- Login/Signup Section -->
+            <div class="login-signup">
+                <a href="login.html" class="btn-login">Đăng nhập</a>
+                <a href="sign-up.html" class="btn-signup">Đăng ký</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- VIDEO SECTION -->
+    <section class="video-section">
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TUxhSregQ_k?si=4tDGgsKXq50BE47I"title="YouTube video player" frameborder="0"allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Main content -->
+    <div id="cat-container">
+        <img id="cat-image" src="" alt="Cat Image" style="width:300px;height:auto;">
+    </div>
+    
+    <script>
+       // API TheCatAPI để lấy ảnh mèo ngẫu nhiên
+    const catImage = document.getElementById("cat-image");
+
+// Hàm gọi API để lấy hình ảnh mèo
+async function fetchCatImage() {
+    try {
+        const response = await fetch("https://api.thecatapi.com/v1/images/search");
+        const data = await response.json();
+        catImage.src = data[0].url;  // Gán URL ảnh vào src của thẻ img
+    } catch (error) {
+        console.error("Error fetching cat image:", error);
+    }
+}
+
+// Gọi API khi nhấn vào ảnh
+catImage.addEventListener("click", fetchCatImage);
+
+// Tự động hiển thị hình ảnh mèo khi trang được tải
+window.onload = fetchCatImage;
+       
+    </script>
+    
+    <script type="module">
+
+            // Lấy tên người dùng từ localStorage
+           const username = localStorage.getItem('username');
+        
+             if (username) {
+            document.addEventListener("DOMContentLoaded", function() {
+                // Đặt tên người dùng vào vị trí mong muốn
+                document.querySelector('.user-name').innerText = `Xin chào, ${username}!`;
+              });
+            }
+    </script>
+    
+</body>
+
+</html>

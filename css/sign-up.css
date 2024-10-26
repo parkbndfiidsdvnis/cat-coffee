@@ -1,0 +1,93 @@
+/* Đặt hình nền và căn chỉnh */
+body {
+    background-image: url("https://catmocha.jp/assets/img/top/bg-inside.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Form đăng ký */
+.container {
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: rgba(255, 248, 240, 0.9); /* Nền be với độ trong suốt */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Đổ bóng nhẹ */
+}
+
+/* Tiêu đề */
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #FFF5E1; /* Màu kem nhạt, hài hòa với nền */
+}
+
+/* Input cho username và password */
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #D4A373; /* Viền màu nâu sáng */
+    border-radius: 5px;
+    background-color: #FFF5E1; /* Màu be nhẹ cho input */
+    color: #5C4033; /* Màu chữ nâu đậm */
+}
+
+/* Placeholder màu nâu */
+input[type="email"]::placeholder,
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    color: #5C4033; /* Màu placeholder nâu đậm */
+}
+
+/* Checkbox điều khoản */
+.agree-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    color: #5C4033;
+}
+
+.agree-box input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Nút đăng ký */
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #D4A373; /* Nút màu nâu sáng */
+    color: #FFF5E1; /* Chữ màu kem */
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #B5838D; /* Màu nâu hồng nhẹ khi hover */
+}
+
+/* Liên kết tới trang đăng nhập nếu đã có tài khoản */
+.signup-box {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signup-box span {
+    color: #FFF5E1;
+}
+
+.signup-box a {
+    color: #D4A373;
+    text-decoration: none;
+}
+
+.signup-box a:hover {
+    text-decoration: underline;
+}

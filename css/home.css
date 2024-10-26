@@ -1,0 +1,186 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.top-bar {
+    background-color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.auth-links {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.auth-links a {
+    color: #333;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.main-nav {
+    background-color: #2c2c2c;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-nav .logo img {
+    max-height: 50px;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.main-nav ul li {
+    margin: 0 15px;
+}
+
+.main-nav ul li a {
+    color: #f7c340;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.search-cart {
+    display: flex;
+    align-items: center;
+}
+
+.search-cart input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.search-cart a img {
+    max-height: 24px;
+}
+
+.hero {
+    background: url('background-image.png') no-repeat center center;
+    background-size: cover;
+    padding: 50px 0;
+}
+
+.hero .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.hero .content img {
+    max-width: 200px;
+    margin-right: 20px;
+}
+
+.hero .text h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.hero .text h1 span {
+    color: #f7c340;
+    font-style: italic;
+}
+
+.hero .text p {
+    color: #666;
+    max-width: 500px;
+    margin-top: 10px;
+}
+/* Login/Signup Buttons */
+.login-signup {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-login, .btn-signup {
+    text-decoration: none;
+    padding: 8px 16px;
+    background-color: #444; /* Adjust color */
+    color: white;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-login:hover, .btn-signup:hover {
+    background-color: #333; /* Darken on hover */
+}
+/* video */
+.video-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px
+}
+
+.video-container {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.video-container iframe {
+    width: 1000px;
+    border-radius: 10px;
+    height: 500px;
+}
+
+#cat-container {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9; /* Màu nền nhẹ */
+    border-radius: 10px;       /* Bo góc mềm mại */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bóng đổ nhẹ */
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Phong cách cho hình ảnh */
+#cat-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Bo góc cho hình ảnh */
+    transition: transform 0.3s ease; /* Hiệu ứng khi hover */
+}
+
+/* Phong cách khi di chuột vào ảnh */
+#cat-image:hover {
+    transform: scale(1.05); /* Phóng to nhẹ khi hover */
+}
+
+/* Phong cách cho nút làm mới ảnh */
+#new-cat-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #6c757d; /* Màu xám nhẹ */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Hiệu ứng chuyển màu và phóng to nhẹ */
+}
+
+
+#new-cat-btn:hover {
+    background-color: #495057;
+    transform: scale(1.05); 
+}

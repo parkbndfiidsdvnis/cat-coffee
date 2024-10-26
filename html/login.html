@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập | NoirMovies</title>
+
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    
+    <div class="container">
+        <form action="./Home.html" id="loginForm">
+            <h1 class="title">C&C</h1>
+
+            <input type="text" id="login_email" placeholder="Email">
+
+            <input type="password" id="login_password" placeholder="Password">
+
+            <button id="login_button">Đăng nhập</button>
+        </form>
+
+        <div class="signup-box">
+            <span>Don't have an account yet?</span>
+            <a href="./sign-up.html">Login Now !</a>
+        </div>
+    </div>
+
+
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script type="module">
+    import { auth } from "../javascript/Firebase.js";  // Đường dẫn sửa đúng
+    import { signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js";
+
+    const loginForm = document.getElementById('loginForm');
+
+    loginForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const email = document.getElementById('login_email').value;
+        const password = document.getElementById('login_password').value;
+
+        // Đăng nhập người dùng với Firebase
+        signInWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+                const user = userCredential.user;
+                
+                // Lưu tên người dùng vào localStorage hoặc sessionStorage
+                if (user.displayName) {
+                    localStorage.setItem('username', user.displayName);
+                } else {
+                    localStorage.setItem('username', 'User');
+                }
+
+                alert('User logged in successfully!');
+                
+                // Chuyển hướng đến trang chính sau khi đăng nhập
+                window.location.href = 'Home.html';
+            })
+            .catch((error) => {
+                alert(error.message);
+            });
+    });
+</script>
+
+      
+    
+</body>
+</html>

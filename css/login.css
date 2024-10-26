@@ -1,0 +1,72 @@
+body {
+    background-image: url("https://catmocha.jp/assets/img/top/bg-inside.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: rgba(255, 248, 240, 0.9); /* Nền màu be với độ trong suốt */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Đổ bóng nhẹ để tạo chiều sâu */
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #FFF5E1; /* Màu kem nhạt, hài hòa với hình nền */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #D4A373; /* Viền màu nâu sáng phù hợp với hình nền */
+    border-radius: 5px;
+    background-color: #FFF5E1; /* Màu be nhẹ cho input */
+    color: #5C4033; /* Màu nâu đậm cho chữ */
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    color: #5C4033; /* Màu placeholder nâu đậm */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #D4A373; /* Nút màu nâu sáng */
+    color: #FFF5E1; /* Chữ màu kem */
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #B5838D; /* Màu nâu hồng nhẹ khi hover */
+}
+
+.signup-box {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signup-box span {
+    color: #FFF5E1;
+}
+
+.signup-box a {
+    color: #D4A373;
+    text-decoration: none;
+}
+
+.signup-box a:hover {
+    text-decoration: underline;
+}

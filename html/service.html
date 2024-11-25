@@ -32,31 +32,41 @@
             </div>
         </nav>
     </header>
- 
-    <section class="booking-section">
-        <h2>Đặt lịch dịch vụ</h2>
-        <form id="bookingForm">
-            <div class="form-group">
-                <label for="catId">ID Thú cưng:</label>
-                <input type="text" id="catId" name="catId" placeholder="Nhập ID thú cưng" required>
-            </div>
-            <div class="form-group">
-                <label for="startTime">Thời gian bắt đầu:</label>
-                <input type="datetime-local" id="startTime" name="startTime" required>
-            </div>
-            <div class="form-group">
-                <label for="endTime">Thời gian kết thúc:</label>
-                <input type="datetime-local" id="endTime" name="endTime" required>
-            </div>
-            <button type="submit" class="btn-submit">Đặt lịch</button>
-        </form>
-        <p id="bookingStatus" class="status-message"></p>
-    </section>
+
+    <body>
+        <!-- Form đặt lịch -->
+        <div class="booking-form-container">
+            <h2>Đặt lịch</h2>
+            <form id="booking-form">
+                <label for="cat-id">Cat ID:</label>
+                <input type="text" id="cat-id" placeholder="Nhập ID của mèo" required />
+
+                <label for="start-time">Thời gian bắt đầu:</label>
+                <input type="datetime-local" id="start-time" required />
+
+                <label for="end-time">Thời gian kết thúc:</label>
+                <input type="datetime-local" id="end-time" required />
+
+                <button type="submit" class="btn-submit">Đặt lịch</button>
+            </form>
+            <p id="status-message"></p>
+        </div>
+
+        <!-- Danh sách lịch đã đặt -->
+        <div class="booking-list-container">
+            <h2>Danh sách lịch đã đặt</h2>
+            <div id="booking-list"></div>
+        </div>
+    </body>
+
 
 </body>
 <script src="../data/user.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+    <script src="../javsscript/topcat.js"></script>
+    <script src="../javsscript/topweek.js"></script>
 <script src="../javsscript/booking.js"></script>
+
 </html>

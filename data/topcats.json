@@ -1,0 +1,107 @@
+[
+    {
+        "id": "6e",
+        "title": "Whiskers",
+        "url": "https://cdn2.thecatapi.com/images/6e.jpg",
+        "width": 495,
+        "height": 500
+    },
+    {
+        "id": "88",
+        "title": "Luna",
+        "url": "https://cdn2.thecatapi.com/images/88.gif",
+        "width": 300,
+        "height": 156
+    },
+    {
+        "id": "sg",
+        "title": "Shadow",
+        "url": "https://cdn2.thecatapi.com/images/sg.jpg",
+        "width": 640,
+        "height": 426
+    },
+    {
+        "id": "1l8",
+        "title": "Oliver",
+        "url": "https://cdn2.thecatapi.com/images/1l8.jpg",
+        "width": 343,
+        "height": 500
+    },
+    {
+        "id": "1oi",
+        "title": "Simba",
+        "url": "httpsr://cdn2.thecatapi.com/images/1oi.jpg",
+        "width": 500,
+        "height": 400
+    },
+    {
+        "id": "1v4",
+        "title": "Bella",
+        "url": "https://cdn2.thecatapi.com/images/1v4.jpg",
+        "width": 640,
+        "height": 430
+    },
+    {
+        "id": "26j",
+        "title": "Salem",
+        "url": "https://cdn2.thecatapi.com/images/26j.jpg",
+        "width": 3000,
+        "height": 4000
+    },
+    {
+        "id": "2ke",
+        "title": "Tiger",
+        "url": "https://cdn2.thecatapi.com/images/2ke.jpg",
+        "width": 500,
+        "height": 333
+    },
+    {
+        "id": "2mh",
+        "title": "Socks",
+        "url": "https://cdn2.thecatapi.com/images/2mh.jpg",
+        "width": 500,
+        "height": 332
+    },
+    {
+        "id": "2pq",
+        "title": "Gizmo",
+        "url": "https://cdn2.thecatapi.com/images/2pq.gif",
+        "width": 280,
+        "height": 392
+    },
+    {
+        "id": "46c",
+        "title": "Oreo",
+        "url": "https://cdn2.thecatapi.com/images/46c.jpg",
+        "width": 3264,
+        "height": 2448
+    },
+    {
+        "id": "497",
+        "title": "Misty",
+        "url": "https://cdn2.thecatapi.com/images/497.gif",
+        "width": 320,
+        "height": 180
+    },
+    {
+        "id": "4gu",
+        "title": "Cleo",
+        "url": "https://cdn2.thecatapi.com/images/4gu.gif",
+        "width": 228,
+        "height": 182
+    },
+    {
+        "id": "4jj",
+        "title": "Jasper",
+        "url": "https://cdn2.thecatapi.com/images/4jj.gif",
+        "width": 250,
+        "height": 187
+    },
+    {
+        "id": "59l",
+        "title": "Tigger",
+        "url": "https://cdn2.thecatapi.com/images/59l.jpg",
+        "width": 500,
+        "height": 326
+    }
+]

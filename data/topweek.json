@@ -1,0 +1,107 @@
+[
+    {
+    "id": "an3",
+    "title":"Pumpkin",
+    "url": "https://cdn2.thecatapi.com/images/an3.gif",
+    "width": 400,
+    "height": 228
+   },
+   {
+    "id": "apg",
+    "title":"Pepper",
+    "url": "https://cdn2.thecatapi.com/images/apg.jpg",
+    "width": 640,
+    "height": 427
+   },
+   {
+    "id": "aqm",
+    "title":"Leo",
+    "url": "https://cdn2.thecatapi.com/images/aqm.jpg",
+    "width": 500,
+    "height": 500
+   },
+   {
+    "id": "b0o",
+    "title":"Mittens",
+    "url": "https://cdn2.thecatapi.com/images/b0o.jpg",
+    "width": 500,
+    "height": 333
+   },
+   {
+    "id": "b3p",
+    "title":"Boo",
+    "url": "https://cdn2.thecatapi.com/images/b3p.jpg",
+    "width": 500,
+    "height": 499
+   },
+   {
+    "id": "b95",
+    "title":"Velvet",
+    "url": "https://cdn2.thecatapi.com/images/b95.png",
+    "width": 500,
+    "height": 375
+   },
+   {
+    "id": "bcb",
+    "title":"Caramel",
+    "url": "https://cdn2.thecatapi.com/images/bcb.jpg",
+    "width": 500,
+    "height": 304
+   },
+   {
+    "id": "bhr",
+    "title":"Noodle",
+    "url": "https://cdn2.thecatapi.com/images/bhr.jpg",
+    "width": 500,
+    "height": 298
+   },
+   {
+    "id": "bla",
+    "title":"Biscuit",
+    "url": "https://cdn2.thecatapi.com/images/bla.jpg",
+    "width": 1843,
+    "height": 2764
+   },
+   {
+    "id": "bqq",
+    "title":"Rocky",
+    "url": "https://cdn2.thecatapi.com/images/bqq.jpg",
+    "width": 768,
+    "height": 1024
+   },
+   {
+    "id": "bt4",
+    "title":"Socks",
+    "url": "https://cdn2.thecatapi.com/images/bt4.jpg",
+    "width": 500,
+    "height": 338
+   },
+   {
+    "id": "bul",
+    "title":"Toby",
+    "url": "https://cdn2.thecatapi.com/images/bul.jpg",
+    "width": 640,
+    "height": 427
+   },
+   {
+    "id": "buq",
+    "title":"Bella",
+    "url": "https://cdn2.thecatapi.com/images/buq.jpg",
+    "width": 640,
+    "height": 504
+   },
+   {
+    "id": "c4o",
+    "title":"Muffin",
+    "url": "https://cdn2.thecatapi.com/images/c4o.gif",
+    "width": 245,
+    "height": 200
+   },
+   {
+    "id": "c8o",
+    "title":"Biscotti",
+    "url": "https://cdn2.thecatapi.com/images/c8o.jpg",
+    "width": 700,
+    "height": 525
+   }
+]

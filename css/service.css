@@ -1,0 +1,217 @@
+/* Reset mặc định */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e1e; /* Thay đổi màu nền sang đen xám */
+  color: #fff; /* Đổi màu chữ mặc định sang trắng */
+}
+
+/* Thanh thông báo trên cùng */
+.top-bar {
+  background-color: #333;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+  color: #f7c340; /* Màu chữ vàng cho đồng bộ */
+}
+
+/* Liên kết đăng nhập/đăng ký */
+.auth-links {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.auth-links a {
+  color: #f7c340; /* Giữ màu vàng để nổi bật */
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+/* Thanh điều hướng chính */
+.main-nav {
+  background-color: #000; /* Màu đen */
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #f7c340; /* Đường viền màu vàng bên dưới */
+}
+
+.main-nav .logo img {
+  max-height: 50px;
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.main-nav ul li {
+  margin: 0 15px;
+}
+
+.main-nav ul li a {
+  color: #f7c340; /* Màu chữ vàng */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.main-nav ul li a:hover {
+  color: #ffa500; /* Hiệu ứng chuyển sang vàng cam khi rê chuột */
+}
+
+/* Ô tìm kiếm và giỏ hàng */
+.search-cart {
+  display: flex;
+  align-items: center;
+}
+
+.search-cart input[type="text"] {
+  padding: 8px 10px;
+  border-radius: 20px; /* Bo tròn ô nhập */
+  border: 1px solid #666;
+  background-color: #333; /* Nền tối */
+  color: #fff; /* Màu chữ trắng */
+  margin-right: 10px;
+}
+
+.search-cart input[type="text"]::placeholder {
+  color: #999; /* Màu chữ placeholder */
+}
+
+.search-cart a img {
+  max-height: 24px;
+}
+
+/* Hero section */
+.hero {
+  background: url('background-image.png') no-repeat center center;
+  background-size: cover;
+  padding: 60px 0;
+}
+
+.hero .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.hero .content img {
+  max-width: 250px;
+  margin-right: 20px;
+  border-radius: 10px; /* Bo góc hình ảnh */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Đổ bóng */
+}
+
+.hero .text h1 {
+  font-size: 48px;
+  color: #fff; /* Màu chữ chính */
+}
+
+.hero .text h1 span {
+  color: #f7c340; /* Màu vàng đặc trưng */
+  font-style: italic;
+}
+
+.hero .text p {
+  color: #ccc; /* Màu chữ xám nhạt */
+  max-width: 600px;
+  margin-top: 10px;
+  line-height: 1.6; /* Tăng khoảng cách dòng để dễ đọc */
+}
+
+/* Nút bấm (dùng chung) */
+button, .btn-submit {
+  background-color: #f7c340; /* Màu vàng */
+  color: #000; /* Màu chữ đen */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+button:hover, .btn-submit:hover {
+  background-color: #ffa500; /* Đổi sang vàng cam khi rê chuột */
+}
+
+/* Hiển thị trạng thái */
+.status-message {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 16px;
+}
+/* Booking Section */
+.booking-section {
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 600px;
+  background-color: #222;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.booking-section h2 {
+  text-align: center;
+  color: #ffa500;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #333;
+  background-color: #333;
+  color: #fff;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #ffa500;
+}
+
+.btn-submit {
+  background-color: #ffa500;
+  color: #222;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+  background-color: #e68a00;
+}
+
+.status-message {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
+}
+

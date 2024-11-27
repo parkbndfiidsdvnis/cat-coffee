@@ -41,6 +41,6 @@ fetch('../data/topweek.json')
 	.catch(error => console.error('Error fetching cat data:', error));
 	function GoToDetail(id) {
 		localStorage.setItem('catId', id);
-		window.location.href = '../html/Home.html';
+		window.location.href = '../html/service.html';
 	}
 

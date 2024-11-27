@@ -32,7 +32,7 @@ export async function booking(catId, startTime, endTime) {
             endTime: endTime
         });
         console.log("Đặt chỗ thành công với ID: ", docRef.id);
-        
+
         return { success: true, message: "Đặt lịch thành công!" };
     } catch (e) {
         console.error("Lỗi khi thêm dữ liệu: ", e);
@@ -61,7 +61,7 @@ export async function booking(catId, startTime, endTime) {
 }
     document.getElementById("booking-form").addEventListener("submit", async (e) => {
     e.preventDefault(); // Ngăn trang reload
-
+console.log("adkojfhjkasdhkjf")
     // Lấy thông tin từ form
     const catId = document.getElementById("cat-id").value;
     const startTime = document.getElementById("start-time").value;

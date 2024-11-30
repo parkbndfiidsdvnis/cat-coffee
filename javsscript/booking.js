@@ -1,3 +1,7 @@
+import { auth, db } from "./Firebase.js"
+import { getDocs, collection, query, addDoc, where } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
+
+
 export async function loadBookingData() {
     const querySnapshot = await getDocs(collection(db, "booking")); // Lấy dữ liệu từ Firestore
     let data = [];
@@ -36,10 +40,11 @@ export async function booking(catId, startTime, endTime) {
         return { success: true, message: "Đặt lịch thành công!" };
     } catch (e) {
         console.error("Lỗi khi thêm dữ liệu: ", e);
+        console.error(e.stack);
         return { success: false, message: "Lỗi khi đặt lịch, vui lòng thử lại!" };
     }
 }
-    export async function renderBookingList() {
+export async function renderBookingList() {
     const bookingList = await loadBookingData(); // Lấy danh sách lịch đặt
     const bookingContainer = document.getElementById("booking-list"); // Container để hiển thị danh sách
     bookingContainer.innerHTML = ""; // Xóa nội dung cũ
@@ -59,9 +64,10 @@ export async function booking(catId, startTime, endTime) {
         bookingContainer.appendChild(bookingItem); // Thêm từng lịch vào giao diện
     });
 }
-    document.getElementById("booking-form").addEventListener("submit", async (e) => {
+
+document.getElementById("booking-form").addEventListener("submit", async (e) => {
     e.preventDefault(); // Ngăn trang reload
-console.log("adkojfhjkasdhkjf")
+    console.log("adkojfhjkasdhkjf")
     // Lấy thông tin từ form
     const catId = document.getElementById("cat-id").value;
     const startTime = document.getElementById("start-time").value;
@@ -80,3 +86,11 @@ console.log("adkojfhjkasdhkjf")
         renderBookingList();
     }
 });
+    // Lấy tên mèo từ localStorage
+  const selectedCatName = localStorage.getItem("selectedCatName");
+
+    // Hiển thị tên mèo trong form đặt lịch
+    if (selectedCatName) {
+    document.getElementById("cat-name").textContent = selectedCatName; // Gắn tên mèo vào thẻ HTML
+    document.getElementById("cat-id").value = selectedCatName; // Gán vào input ẩn để gửi dữ liệu
+}

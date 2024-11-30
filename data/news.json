@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "Bé mèo mới được cứu hộ đã tìm thấy gia đình",
+        "description": "Bé mèo bị lạc đã được giải cứu và tìm thấy một gia đình yêu thương.",
+        "image": "../image/cat_news1.jpg",
+        "date": "2024-11-30"
+    },
+    {
+        "id": 2,
+        "title": "Bí quyết chăm sóc mèo con khỏe mạnh",
+        "description": "Học cách chăm sóc mèo con từ dinh dưỡng đến vệ sinh cá nhân.",
+        "image": "../image/cat_news2.jpg",
+        "date": "2024-11-28"
+    },
+    {
+        "id": 3,
+        "title": "Những giống mèo hiếm bạn chưa biết",
+        "description": "Khám phá những giống mèo độc đáo và hiếm có trên thế giới.",
+        "image": "../image/cat_news3.jpg",
+        "date": "2024-11-25"
+    }
+]

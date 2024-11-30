@@ -39,7 +39,7 @@ export async function booking(catId, startTime, endTime) {
         return { success: false, message: "Lỗi khi đặt lịch, vui lòng thử lại!" };
     }
 }
-    export async function renderBookingList() {
+export async function renderBookingList() {
     const bookingList = await loadBookingData(); // Lấy danh sách lịch đặt
     const bookingContainer = document.getElementById("booking-list"); // Container để hiển thị danh sách
     bookingContainer.innerHTML = ""; // Xóa nội dung cũ
@@ -59,9 +59,17 @@ export async function booking(catId, startTime, endTime) {
         bookingContainer.appendChild(bookingItem); // Thêm từng lịch vào giao diện
     });
 }
-    document.getElementById("booking-form").addEventListener("submit", async (e) => {
+
+const catIdElement = document.getElementById("cat-id");
+console.log(localStorage.getItem("catId"));
+
+if (localStorage.getItem("catId")) {
+    catIdElement.value = localStorage.getItem("catId");
+}
+
+document.getElementById("booking-form").addEventListener("submit", async (e) => {
     e.preventDefault(); // Ngăn trang reload
-console.log("adkojfhjkasdhkjf")
+    console.log("adkojfhjkasdhkjf")
     // Lấy thông tin từ form
     const catId = document.getElementById("cat-id").value;
     const startTime = document.getElementById("start-time").value;

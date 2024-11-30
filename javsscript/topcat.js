@@ -39,8 +39,3 @@ fetch('../data/topcats.json')
 		}
 	})
 	.catch(error => console.error('Error fetching cat data:', error));
-	function GoToDetail(id) {
-		localStorage.setItem('catId', id);
-		window.location.href = '../html/service.html';
-	}
-

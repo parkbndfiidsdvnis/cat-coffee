@@ -65,6 +65,13 @@ export async function renderBookingList() {
     });
 }
 
+const catIdElement = document.getElementById("cat-id");
+console.log(localStorage.getItem("catId"));
+
+if (localStorage.getItem("catId")) {
+    catIdElement.value = localStorage.getItem("catId");
+}
+
 document.getElementById("booking-form").addEventListener("submit", async (e) => {
     e.preventDefault(); // Ngăn trang reload
     console.log("adkojfhjkasdhkjf")

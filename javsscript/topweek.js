@@ -22,7 +22,7 @@ fetch('../data/topweek.json')
 				const card = `
 				<div class="card overflow-hidden" onclick="GoToDetail(${cat.id})">
 					<div class="card-img-top ratio" style="--bs-aspect-ratio: 120%;">
-					<img src="${cat.url}" class="object-fit-cover" alt="${cat.title	 }">
+					<img src="${cat.url}" class="object-fit-cover" alt="${cat.title}">
 					</div>
 					<div class="card-body bg-dark" style="">
 					<h6 class="card-title text-truncate">${cat.title}</h6>
@@ -39,8 +39,3 @@ fetch('../data/topweek.json')
 		}
 	})
 	.catch(error => console.error('Error fetching cat data:', error));
-	function GoToDetail(id) {
-		localStorage.setItem('catId', id);
-		window.location.href = '../html/service.html';
-	}
-
